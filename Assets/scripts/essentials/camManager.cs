@@ -23,5 +23,9 @@ public class camManager : MonoBehaviour
         cam.transform.rotation = Quaternion.Euler(0, 0, CustomGrav.camZRot);
 
         cam.orthographicSize = slider.value;
+        if (slider.value > slider.minValue)
+        {
+            slider.value -= 5 * Time.deltaTime;
+        }
     }
 }
