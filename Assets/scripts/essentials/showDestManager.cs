@@ -5,12 +5,16 @@ using UnityEngine;
 public class showDestManager : MonoBehaviour
 {
     public GameObject player;
-    public Camera cam;
+    public float angle;
+
+    private void Start()
+    {
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = player.transform.position;
-        //transform.rotation = Quaternion.Euler(0, 0, CustomGrav.camZRot * -1);
     }
 }
