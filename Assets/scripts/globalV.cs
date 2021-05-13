@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Unity;
 
-public class globalV : MonoBehaviour
+public class globalV 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static int CurrLvl = 0;
+    public static float lastPos_x = 0;
+    public static float lastPos_y = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static bool gameOver = false;
+
+    public static string adID = "4127842";
+    public static bool testMode = true;
 }

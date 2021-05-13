@@ -10,7 +10,14 @@ public class nextLevel : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         anim.SetTrigger("lvlD");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(loadNextLevel());
 
+    }
+
+    private IEnumerator loadNextLevel()
+    {
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
