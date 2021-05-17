@@ -3074,7 +3074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1800131826558986535, guid: ef5d7b828e4bca44e8a1cc4e23d4c0d0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 313.6669
+      value: 219.3112
       objectReference: {fileID: 0}
     - target: {fileID: 1800131826558986535, guid: ef5d7b828e4bca44e8a1cc4e23d4c0d0, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3082,12 +3082,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1800131826558986535, guid: ef5d7b828e4bca44e8a1cc4e23d4c0d0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 16
+      value: 0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 1891030919619194283, guid: ef5d7b828e4bca44e8a1cc4e23d4c0d0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f07cc211033cf544f96d4bd4fe4ea5ac, type: 3}
+      objectReference: {fileID: 21300000, guid: b58cce84991190b45bb710a8306eccdc, type: 3}
     - target: {fileID: 1891030919619194283, guid: ef5d7b828e4bca44e8a1cc4e23d4c0d0, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -3128,6 +3128,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 494304590555163719}
+    - target: {fileID: 7430028450995489880, guid: ef5d7b828e4bca44e8a1cc4e23d4c0d0, type: 3}
+      propertyPath: p_b
+      value: 
+      objectReference: {fileID: 494304590555163721}
     - target: {fileID: 7430028450995489880, guid: ef5d7b828e4bca44e8a1cc4e23d4c0d0, type: 3}
       propertyPath: player
       value: 

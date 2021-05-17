@@ -7,17 +7,33 @@ public class gameOverManager : MonoBehaviour, IUnityAdsListener
 {
 
     public GameObject player;
+    public Animator anim;
+    public Rigidbody2D p_b;
 
     // Update is called once per frame
     void Update()
     {
+        anim.SetBool("GameOver", globalV.gameOver);
+
         if (globalV.gameOver)
         {
-            moveToCP();
+            p_b.bodyType = RigidbodyType2D.Static;
+            StartCoroutine(spawn());
+        }
+        else
+        {
+            p_b.bodyType = RigidbodyType2D.Dynamic;
         }
 
     }
 
+    private IEnumerator spawn()
+    {
+        yield return new WaitForSeconds(2f);
+
+        moveToCP();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
     string mySurfacingId = "Rewarded_Android";
 
@@ -25,15 +41,15 @@ public class gameOverManager : MonoBehaviour, IUnityAdsListener
     {
         adCLick();
         // if sucessfull
-        goToCP();
+        //goToCP();
     }
 
     private void goToCP()
     {
         //Time.timeScale = 1;
-        globalV.gameOver = false;
-
         player.transform.position = new Vector2(globalV.lastPos_x, globalV.lastPos_y);
+
+        globalV.gameOver = false;
 
     }
 

@@ -1405,7 +1405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2055693058}
-  m_RootOrder: 159
+  m_RootOrder: 149
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &227235447
 BoxCollider2D:
@@ -15973,6 +15973,7 @@ Transform:
   - {fileID: 2040100827}
   - {fileID: 915145259}
   - {fileID: 971801073}
+  - {fileID: 227235446}
   - {fileID: 27731907}
   - {fileID: 1423953790}
   - {fileID: 486111143}
@@ -15983,7 +15984,6 @@ Transform:
   - {fileID: 1312752876}
   - {fileID: 1075523787}
   - {fileID: 1780601786}
-  - {fileID: 227235446}
   - {fileID: 707759238}
   - {fileID: 606353942}
   - {fileID: 906179460}
@@ -16566,11 +16566,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 494304590555163718, guid: 2515a47af86e9b244889799ee538838f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42
+      value: 67.3
       objectReference: {fileID: 0}
     - target: {fileID: 494304590555163718, guid: 2515a47af86e9b244889799ee538838f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.9
+      value: -38.52
       objectReference: {fileID: 0}
     - target: {fileID: 1353538221684271393, guid: 2515a47af86e9b244889799ee538838f, type: 3}
       propertyPath: m_LocalScale.x
@@ -16624,6 +16624,26 @@ PrefabInstance:
       propertyPath: m_Text
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5306566384900664020, guid: 2515a47af86e9b244889799ee538838f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 461.8785
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306566384900664020, guid: 2515a47af86e9b244889799ee538838f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 230.9393
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306566384900664020, guid: 2515a47af86e9b244889799ee538838f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000019073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306566384900664020, guid: 2515a47af86e9b244889799ee538838f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000047684
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431805982114754136, guid: 2515a47af86e9b244889799ee538838f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b58cce84991190b45bb710a8306eccdc, type: 3}
     - target: {fileID: 6934638730243142999, guid: 2515a47af86e9b244889799ee538838f, type: 3}
       propertyPath: m_PointLightOuterRadius
       value: 2.7184844
