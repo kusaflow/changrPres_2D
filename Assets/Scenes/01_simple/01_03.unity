@@ -16604,6 +16604,10 @@ PrefabInstance:
       propertyPath: lvl
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1585356118226686255, guid: 2515a47af86e9b244889799ee538838f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2296585547907302826, guid: 2515a47af86e9b244889799ee538838f, type: 3}
       propertyPath: weight
       value: 1

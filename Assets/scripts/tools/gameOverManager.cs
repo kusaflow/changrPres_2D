@@ -10,18 +10,29 @@ public class gameOverManager : MonoBehaviour, IUnityAdsListener
     public Animator anim;
     public Rigidbody2D p_b;
 
+    bool docallAd = true;
+
     // Update is called once per frame
     void Update()
     {
-        anim.SetBool("GameOver", globalV.gameOver);
+        if (anim)
+            anim.SetBool("GameOver", globalV.gameOver);
 
         if (globalV.gameOver)
         {
+
+            //player.tag = "temp";
             p_b.bodyType = RigidbodyType2D.Static;
-            StartCoroutine(spawn());
+            if (docallAd)
+            {
+                docallAd = false;
+                StartCoroutine(spawn());
+            }
+            //moveToCP();
         }
         else
         {
+            //player.tag = "Player";
             p_b.bodyType = RigidbodyType2D.Dynamic;
         }
 
@@ -29,9 +40,12 @@ public class gameOverManager : MonoBehaviour, IUnityAdsListener
 
     private IEnumerator spawn()
     {
+        
         yield return new WaitForSeconds(2f);
 
+        
         moveToCP();
+        
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -39,6 +53,7 @@ public class gameOverManager : MonoBehaviour, IUnityAdsListener
 
     public void moveToCP()
     {
+        //Debug.Log("kusa");
         adCLick();
         // if sucessfull
         //goToCP();
@@ -50,6 +65,8 @@ public class gameOverManager : MonoBehaviour, IUnityAdsListener
         player.transform.position = new Vector2(globalV.lastPos_x, globalV.lastPos_y);
 
         globalV.gameOver = false;
+
+        docallAd = true;
 
     }
 

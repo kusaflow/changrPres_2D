@@ -21,6 +21,11 @@ public class Slider_ButtonInteract_Mngr : MonoBehaviour
     void Update()
     {
 
+        if (globalV.gameOver)
+        {
+            slider.value = 0;
+        }
+
         if (slider.value >= 1f)
         {
             UpBut.interactable = true;
